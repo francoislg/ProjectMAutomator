@@ -8,15 +8,15 @@ namespace ProjectMAutomator.Core {
     using DolphinControllerAutomator;
     public class ButtonMapper {
         private DolphinAsyncController controller;
-        private List<string> commands;
+        private List<Command> commands;
         private int position;
-        public ButtonMapper(DolphinAsyncController controller, List<string> commands, string defaultCommand) {
+        public ButtonMapper(DolphinAsyncController controller, List<Command> commands, Command defaultCommand) {
             this.controller = controller;
             this.commands = commands;
             this.position = commands.IndexOf(defaultCommand);
         }
 
-        public async Task goTo(string command) {
+        public async Task GoTo(Command command) {
             int newPosition = commands.IndexOf(command);
             if (newPosition != position) {
                 controller.press(DolphinButton.A).then();

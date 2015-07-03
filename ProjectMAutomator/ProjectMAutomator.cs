@@ -17,7 +17,6 @@ namespace ProjectMAutomator {
         public ProjectMAutomator() {
             InitializeComponent();
             controller = new DolphinAsyncController(new vJoyController(1), 50, 20);
-            new ProjectMNamesAutomator(controller).ShowDialog();
         }
 
         private async void initialSetupButton_Click(object sender, EventArgs e) {

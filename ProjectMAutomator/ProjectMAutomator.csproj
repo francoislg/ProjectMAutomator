@@ -38,6 +38,15 @@
     <Reference Include="DolphinControllerAutomator">
       <HintPath>..\..\DolphinControllerAutomator\DolphinControllerAutomator\bin\Release\DolphinControllerAutomator.dll</HintPath>
     </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>packages\MongoDB.Bson.2.0.1\lib\net45\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>packages\MongoDB.Driver.2.0.1\lib\net45\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core">
+      <HintPath>packages\MongoDB.Driver.Core.2.0.1\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,8 +62,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\ButtonMapper.cs" />
+    <Compile Include="Core\Command.cs" />
+    <Compile Include="Core\GamecubeControllerConfig.cs" />
+    <Compile Include="Core\GamecubeControllerConfigurer.cs" />
     <Compile Include="Core\InitialSetup.cs" />
     <Compile Include="Core\NameConfigurer.cs" />
+    <Compile Include="MongoResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MongoResources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ProjectMAutomator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +87,10 @@
       <DependentUpon>ProjectMNamesAutomator.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MongoResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MongoResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProjectMAutomator.resx">
       <DependentUpon>ProjectMAutomator.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,14 +98,16 @@
       <DependentUpon>ProjectMNamesAutomator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
