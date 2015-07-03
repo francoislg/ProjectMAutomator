@@ -117,13 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="controllersCollection" xml:space="preserve">
-    <value>controllers</value>
-  </data>
-  <data name="database" xml:space="preserve">
-    <value>projectmcontrollers</value>
-  </data>
-  <data name="mongourl" xml:space="preserve">
-    <value>mongodb://projectmautomator:f6H!wp;X@ds036648.mongolab.com:36648/projectmcontrollers</value>
-  </data>
 </root>

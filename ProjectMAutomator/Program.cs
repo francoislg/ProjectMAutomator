@@ -13,7 +13,7 @@ namespace ProjectMAutomator {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ProjectMAutomator());
+            Application.Run(new ProjectMMainMenu());
         }
     }
 }

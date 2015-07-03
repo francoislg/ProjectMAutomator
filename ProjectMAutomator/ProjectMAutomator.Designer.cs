@@ -80,9 +80,9 @@
             // 
             // toNamesButton
             // 
-            this.toNamesButton.Location = new System.Drawing.Point(251, 12);
+            this.toNamesButton.Location = new System.Drawing.Point(175, 12);
             this.toNamesButton.Name = "toNamesButton";
-            this.toNamesButton.Size = new System.Drawing.Size(75, 23);
+            this.toNamesButton.Size = new System.Drawing.Size(73, 23);
             this.toNamesButton.TabIndex = 5;
             this.toNamesButton.Text = "To Names";
             this.toNamesButton.UseVisualStyleBackColor = true;
@@ -92,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(338, 125);
+            this.ClientSize = new System.Drawing.Size(264, 98);
             this.Controls.Add(this.toNamesButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

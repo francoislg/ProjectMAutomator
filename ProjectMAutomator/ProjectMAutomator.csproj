@@ -80,11 +80,23 @@
       <DependentUpon>ProjectMAutomator.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectMMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectMMainMenu.Designer.cs">
+      <DependentUpon>ProjectMMainMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProjectMNamesAutomator.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ProjectMNamesAutomator.Designer.cs">
       <DependentUpon>ProjectMNamesAutomator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectMNamesManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectMNamesManager.Designer.cs">
+      <DependentUpon>ProjectMNamesManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MongoResources.resx">
@@ -94,8 +106,14 @@
     <EmbeddedResource Include="ProjectMAutomator.resx">
       <DependentUpon>ProjectMAutomator.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProjectMMainMenu.resx">
+      <DependentUpon>ProjectMMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProjectMNamesAutomator.resx">
       <DependentUpon>ProjectMNamesAutomator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectMNamesManager.resx">
+      <DependentUpon>ProjectMNamesManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

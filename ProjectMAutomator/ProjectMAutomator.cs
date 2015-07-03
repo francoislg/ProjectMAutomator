@@ -24,7 +24,9 @@ namespace ProjectMAutomator {
         }
 
         private void toNamesButton_Click(object sender, EventArgs e) {
+            this.Hide();
             new ProjectMNamesAutomator(controller).ShowDialog();
+            this.Show();
         }
     }
 }

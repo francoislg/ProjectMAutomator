@@ -61,20 +61,29 @@ namespace ProjectMAutomator {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to f6H!wp;X.
+        ///   Looks up a localized string similar to controllers.
         /// </summary>
-        internal static string dbpassword {
+        internal static string controllersCollection {
             get {
-                return ResourceManager.GetString("dbpassword", resourceCulture);
+                return ResourceManager.GetString("controllersCollection", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to projectmautomator.
+        ///   Looks up a localized string similar to projectmcontrollers.
         /// </summary>
-        internal static string dbuser {
+        internal static string database {
             get {
-                return ResourceManager.GetString("dbuser", resourceCulture);
+                return ResourceManager.GetString("database", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to mongodb://projectmautomator:f6H!wp;X@ds036648.mongolab.com:36648/projectmcontrollers.
+        /// </summary>
+        internal static string mongourl {
+            get {
+                return ResourceManager.GetString("mongourl", resourceCulture);
             }
         }
     }
